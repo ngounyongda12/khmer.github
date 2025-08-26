@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khmer-Thai News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            margin: 0;
+            background: #f9f9f9;
+            color: #222;
+        }
+        
+        header {
+            background: #b22222;
+            /* solid professional red */
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            /* subtle shadow for depth */
+        }
+        
+        header h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.4rem;
+            /* slightly smaller and balanced */
+            font-weight: 400;
+            margin: 0;
+            letter-spacing: 0.5px;
+        }
+        
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.2rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        header nav a:hover {
+            color: #ffcccc;
+            /* subtle hover effect */
+        }
+        
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        article img.article-image {
+            width: 80%;
+            max-width: 600px;
+            display: block;
+            margin: 1rem auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        article h2 {
+            color: #b22222;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.8rem;
+            margin-top: 1.5rem;
+        }
+        
+        article p {
+            line-height: 1.7;
+            margin: 1rem 0;
+        }
+        
+        .highlight-card {
+            background: #fff;
+            border-left: 4px solid #b22222;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .highlight-card h3 {
+            color: #b22222;
+            margin: 0.5rem 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .highlight-card img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 6px;
+            margin-top: 0.5rem;
+        }
+        
+        .caption {
+            font-size: 0.85rem;
+            color: #555;
+            margin-top: 0.3rem;
+            text-align: center;
+        }
+        
+        .related {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .related a {
+            flex: 1 1 calc(33% - 1rem);
+            background: #fff;
+            text-decoration: none;
+            color: #222;
+            border-radius: 8px;
+            padding: 0.8rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .related a:hover {
+            transform: translateY(-3px);
+        }
+        
+        .related a h4 {
+            font-family: 'Roboto', sans-serif;
+            color: #b22222;
+            margin: 0.5rem 0;
+        }
+        
+        footer {
+            text-align: center;
+            background: #f0f0f0;
+            color: #222;
+            padding: 1.5rem;
+            border-top: 1px solid #ccc;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Khmer-Thai News</h1>
+    </header>
+    <main>
+        <article>
+            <img src="kh.webp" alt="Cambodian soldier on border" class="article-image">
+            <div class="caption">Cambodian soldier standing guard near the border</div>
+            <h2>Border Tensions Continue Amid Fragile Ceasefire</h2>
+            <p>The guns along the Thai-Cambodian border have been silent for three weeks, yet daily accusations continue between the two countries. Cambodia has been more media-savvy, while Thailand struggles to coordinate its narrative.</p>
+
+            <div class="highlight-card">
+                <h3>Mine Accusations</h3>
+                <img src="thai bek.jpg" alt="Thai soldier mine detection">
+                <div class="caption">Thai soldiers demonstrating mine detection techniques</div>
+                <p>Thailand has accused Cambodia of laying new PMN-2 anti-personnel mines, causing injuries to Thai soldiers. Cambodia denies this, citing old mines from the 1980s.</p>
+            </div>
+
+            <div class="highlight-card">
+                <h3>Preah Vihear Temple Dispute</h3>
+                <img src="khhh.jpg" alt="Preah Vihear temple damage">
+                <div class="caption">Preah Vihear temple allegedly damaged during clashes</div>
+                <p>The historical Preah Vihear temple is central to the border dispute. Cambodia claims Thai shelling caused damage, while Thailand denies the allegations.</p>
+            </div>
+
+            <h2>Political and Social Impact</h2>
+            <p>Border clashes and disputes have displaced thousands, disrupted trade, and worsened nationalist tensions. Many Cambodian migrant workers have left Thailand, affecting both economies.</p>
+
+            <div class="related">
+                <a href="#">
+                    <h4>The fractured friendship behind the border fight</h4>
+                    <p>Insight on political relations affecting the border conflict.</p>
+                </a>
+                <a href="#">
+                    <h4>Thailand accuses Cambodia of ceasefire violations</h4>
+                    <p>Official statements and evidence presented.</p>
+                </a>
+                <a href="#">
+                    <h4>Impact on migrant workers and trade</h4>
+                    <p>Economic consequences of border tensions.</p>
+                </a>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>© 2025 Khmer-Thai News</p>
+    </footer>
+</body>
+
+</html>
